@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "منصة أ/ احمد عاطف فودة - البوابة التعليمية",
+  "short_name": "منصة فودة",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/JhFWqtKr/icon-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
