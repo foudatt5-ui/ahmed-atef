@@ -4291,13 +4291,7 @@
 
   <!-- ===== EXTERNAL VERCEL -> GOOGLE APPS SCRIPT DIRECT BRIDGE ===== -->
   <script>
-    /*
-      External hosting:
-      Vercel serves this HTML.
-      Browser -> Google Apps Script Web App -> Google Sheets.
-      The client key is intentionally embedded in this HTML per the selected strategy.
-      It is NOT a true secret because browser source can be inspected.
-    */
+    /* الاتصال بخدمة البيانات */
     const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbx0PK8s5ifESla0OS-z-HN636f2KhR7IKvn4z167U_LrI1Pl-Phc6vHEgByobP8Ya5I/exec";
 
     (function installGoogleScriptRunBridge() {
@@ -4338,7 +4332,7 @@
                     'Content-Type': 'text/plain;charset=utf-8'
                   },
                   body: JSON.stringify({
-                    secret: GAS_API_KEY,
+
                     method: String(prop),
                     args: args
                   }),
@@ -4420,7 +4414,7 @@
             method: 'POST',
             headers: { 'Content-Type': 'text/plain;charset=utf-8' },
             body: JSON.stringify({
-              secret: GAS_API_KEY,
+
               method: 'loginByPhone',
               args: ['0000000000', '__API_TEST__']
             }),
