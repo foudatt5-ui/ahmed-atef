@@ -4291,8 +4291,8 @@
 
   <!-- ===== EXTERNAL VERCEL -> GOOGLE APPS SCRIPT DIRECT BRIDGE ===== -->
   <script>
-    /* الاتصال بخدمة البيانات */
-    const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbx0PK8s5ifESla0OS-z-HN636f2KhR7IKvn4z167U_LrI1Pl-Phc6vHEgByobP8Ya5I/exec";
+    /* الاتصال بخدمة البيانات عبر المسار الداخلي /api/gas */
+    const GAS_WEBAPP_URL = "/api/gas";
 
     (function installGoogleScriptRunBridge() {
       function createRunner() {
